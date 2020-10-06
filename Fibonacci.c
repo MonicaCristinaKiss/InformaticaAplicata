@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fib(int);
+double fib(int);
 
 int main() {
 	int i,nr;
 	printf("Cate numere din sirul Fibonacci doriti sa se afiseze?\n");
 	scanf(" %d",&nr);
 	for(i=0;i<nr;i++) {
-		printf("%d ",fib(i));
+		printf("%.0f ",fib(i));
 	}
 	return 0;
 }
 
-int fib(int n) {
-	int result;
+double fib(int n) {
+	double result;
 	if(n==0) {
 		result=0;
 	}
