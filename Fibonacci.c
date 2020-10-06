@@ -14,15 +14,13 @@ int main() {
 }
 
 double fib(int n) {
-	double result;
 	if(n==0) {
-		result=0;
+		return 0;
 	}
 	else if(n==1) {
-		result=1;
+		return 1;
 	}
 	else {
-		result=fib(n-1)+fib(n-2);
+		return (fib(n-1)+fib(n-2));
 	}
-	return result;
 }
